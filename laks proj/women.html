@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+   
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container-fluid" id="navy">
+      <a class="navbar-brand" href="front.html">Thrift Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Browse
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="men.html">Men</a></li>
+              <li><a class="dropdown-item" href="women.html">Women</a></li>
+              <li><a class="dropdown-item" href="fashion.html">Fashion</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Women's Collection Section -->
+  <section class="collections">
+    <div class="container">
+      <h2 class="section-title text-center">Women's Collection</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="lehenga.png" class="card-img-top" alt="Sequin Lehenga">
+            <div class="card-body">
+              <h5 class="card-title">Sequin Lehenga</h5>
+              <p class="card-text">₹20000</p>
+              <button class="btn btn-outline-primary" onclick="addToCart('lehenga', 20000, 'lehenga.png')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="floral.jpg" class="card-img-top" alt="Floral dress">
+            <div class="card-body">
+              <h5 class="card-title">Floral dress</h5>
+              <p class="card-text">₹399</p>
+              <button class="btn btn-outline-primary" onclick="addToCart('dress', 399, 'floral.jpg')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="frock.jpg" class="card-img-top" alt="Women's Handbag">
+            <div class="card-body">
+              <h5 class="card-title">Bridal Frock</h5>
+              <p class="card-text">₹8500</p>
+              <button class="btn btn-outline-primary" onclick="addToCart('frock', 8500, 'frock.jpg')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center p-4">
+    <p>&copy; 2024 Thrift Shop. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
